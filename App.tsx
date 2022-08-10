@@ -8,16 +8,16 @@ import {
   Heading,
 } from "native-base";
 import { THEME } from "./src/styles/theme";
+import { NavigationContainer } from "@react-navigation/native";
+import { AppRoutes } from "./src/routes";
 
 export default function App() {
   return (
     <NativeBaseProvider theme={THEME}>
+      <NavigationContainer>
+        <AppRoutes />
+      </NavigationContainer>
       <StatusBar />
-      <VStack flex={1} p={4} bg="gray.600">
-        <Heading textAlign="center" color="gray.100" py={10}>
-          Hello world
-        </Heading>
-      </VStack>
     </NativeBaseProvider>
   );
 }
