@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "react-native-typescript-template",
+    "slug": "react-native-typescript-template",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
